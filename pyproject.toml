@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "braidvisualiser"
-version = "0.1.0"
+version = "0.2.0"
 description = "Python library providing functionality for the creation and rendering of Artin braids."
 authors = ["Rex Greenway"]
 license = "MIT"
