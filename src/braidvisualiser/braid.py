@@ -32,7 +32,7 @@ class Braid:
         self.braid_word = []
         for i in ops:
             # Check for invalid braid operation in selected group
-            if abs(i) >= n:
+            if abs(i) >= n or i == 0:
                 raise ValueError("Braid operations cannot exceed the containing braid group.")
             # Build braid word
             self.braid_word.append(i)
