@@ -1,9 +1,6 @@
 name: Deploy BraidVisualiser to PyPi
 
 on:
-  push:
-    branches:
-      - main
   release:
     types: [published]
 
@@ -27,7 +24,7 @@ jobs:
       - name: Build Packages
         run: poetry build
 
-      - name: Publish to Test PyPi
+      - name: Publish to PyPi
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
           password: ${{ secrets.PYPI_API_TOKEN }}
